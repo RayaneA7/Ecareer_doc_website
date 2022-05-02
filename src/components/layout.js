@@ -1,12 +1,12 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { MDXProvider } from '@mdx-js/react';
-import { Helmet } from 'react-helmet';
-import ThemeProvider from './theme/themeProvider';
-import mdxComponents from './mdxComponents';
-import Sidebar from './sidebar';
-import RightSidebar from './rightSidebar';
-import config from '../../config.js';
+import React from 'react'
+import styled from '@emotion/styled'
+import { MDXProvider } from '@mdx-js/react'
+import { Helmet } from 'react-helmet'
+import ThemeProvider from './theme/themeProvider'
+import mdxComponents from './mdxComponents'
+import Sidebar from './sidebar'
+import RightSidebar from './rightSidebar'
+import config from '../../config.js'
 
 const Wrapper = styled('div')`
   display: flex;
@@ -18,7 +18,7 @@ const Wrapper = styled('div')`
   }
 
   .sideBarUL .item > a:hover {
-    background-color: #530eaa;
+    background-color: #f1c53c;
     color: #fff !important;
 
     /* background: #F8F8F8 */
@@ -27,7 +27,7 @@ const Wrapper = styled('div')`
   @media only screen and (max-width: 767px) {
     display: block;
   }
-`;
+`
 
 const Content = styled('main')`
   display: flex;
@@ -45,22 +45,22 @@ const Content = styled('main')`
     margin: 0 10px;
     padding-top: 3rem;
   }
-`;
+`
 
 const MaxWidth = styled('div')`
   @media only screen and (max-width: 50rem) {
     width: 100%;
     position: relative;
   }
-`;
+`
 
 const LeftSideBarWidth = styled('div')`
   width: 298px;
-`;
+`
 
 const RightSideBarWidth = styled('div')`
   width: 224px;
-`;
+`
 
 const Layout = ({ children, location }) => (
   <ThemeProvider location={location}>
@@ -81,6 +81,6 @@ const Layout = ({ children, location }) => (
       </Wrapper>
     </MDXProvider>
   </ThemeProvider>
-);
+)
 
-export default Layout;
+export default Layout

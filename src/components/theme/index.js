@@ -2,7 +2,7 @@ const baseTheme = {
   fonts: {
     mono: '"SF Mono", "Roboto Mono", Menlo, monospace',
   },
-};
+}
 
 const lightTheme = {
   ...baseTheme,
@@ -13,7 +13,7 @@ const lightTheme = {
     preFormattedText: 'rgb(245, 247, 249)',
     link: '#1000EE',
   },
-};
+}
 
 const darkTheme = {
   ...baseTheme,
@@ -22,8 +22,8 @@ const darkTheme = {
     heading: '#fff',
     text: '#fff',
     preFormattedText: '#000',
-    link: '#1ED3C6',
+    link: '#f1c53c',
   },
-};
+}
 
-export { lightTheme, darkTheme };
+export { lightTheme, darkTheme }

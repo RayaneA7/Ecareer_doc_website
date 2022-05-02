@@ -1,43 +1,43 @@
-import React from 'react';
-import styled from '@emotion/styled';
-import { StaticQuery, graphql } from 'gatsby';
-import GitHubButton from 'react-github-btn';
-import Link from './link';
-import Loadable from 'react-loadable';
-import logoImg from './images/white_logo.png';
+import React from 'react'
+import styled from '@emotion/styled'
+import { StaticQuery, graphql } from 'gatsby'
+import GitHubButton from 'react-github-btn'
+import Link from './link'
+import Loadable from 'react-loadable'
+import logoImg from './images/ProjectName.svg'
 
-import config from '../../config.js';
-import LoadingProvider from './mdxComponents/loading';
-import { DarkModeSwitch } from './DarkModeSwitch';
+import config from '../../config.js'
+import LoadingProvider from './mdxComponents/loading'
+import { DarkModeSwitch } from './DarkModeSwitch'
 
-const help = require('./images/help.svg');
+const help = require('./images/help.svg')
 
-const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false;
+const isSearchEnabled = config.header.search && config.header.search.enabled ? true : false
 
-let searchIndices = [];
+let searchIndices = []
 
 if (isSearchEnabled && config.header.search.indexName) {
   searchIndices.push({
     name: `${config.header.search.indexName}`,
     title: `Results`,
     hitComp: `PageHit`,
-  });
+  })
 }
 
-import Sidebar from './sidebar';
+import Sidebar from './sidebar'
 
 const LoadableComponent = Loadable({
   loader: () => import('./search/index'),
   loading: LoadingProvider,
-});
+})
 
-function myFunction() {
-  var x = document.getElementById('navbar');
+function myFunction () {
+  var x = document.getElementById('navbar')
 
   if (x.className === 'topnav') {
-    x.className += ' responsive';
+    x.className += ' responsive'
   } else {
-    x.className = 'topnav';
+    x.className = 'topnav'
   }
 }
 
@@ -52,7 +52,7 @@ const StyledBgDiv = styled('div')`
   @media (max-width: 767px) {
     display: block;
   }
-`;
+`
 
 const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
   <StaticQuery
@@ -77,28 +77,27 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
       }
     `}
     render={data => {
-
-      const twitter = require('./images/twitter.svg');
+      const twitter = require('./images/twitter.svg')
 
       const {
         site: {
           siteMetadata: { headerTitle, githubUrl, helpUrl, tweetText, logo, headerLinks },
         },
-      } = data;
+      } = data
 
-      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/';
+      const finalLogoLink = logo.link !== '' ? logo.link : 'https://hasura.io/'
 
       return (
         <div className={'navBarWrapper'}>
           <nav className={'navBarDefault'}>
             <div className={'navBarHeader'}>
               {/* <Link to={finalLogoLink} className={'navBarBrand'}> */}
-                <img
-                  className={'img-responsive displayInline'}
-                  src={logoImg}
-                  alt={'logo'}
-                  style={{width: '200px', height: '50px', marginRight: '10px'}}
-                />
+              <img
+                className={'img-responsive displayInline'}
+                src={logoImg}
+                alt={'logo'}
+                style={{ width: '200px', height: '50px', marginRight: '10px', marginLeft: '10px' }}
+              />
               {/* </Link> */}
               {/* <div
                 className={'headerTitle displayInline'}
@@ -110,7 +109,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 <LoadableComponent collapse={true} indices={searchIndices} />
               </div>
             ) : null}
-            <div id="navbar" className={'topnav'}>
+            <div id='navbar' className={'topnav'}>
               <div className={'visibleMobile'}>
                 <Sidebar location={location} />
                 <hr />
@@ -121,14 +120,14 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                     return (
                       <li key={key}>
                         <a
-                          className="sidebarLink"
+                          className='sidebarLink'
                           href={link.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                          target='_blank'
+                          rel='noopener noreferrer'
                           dangerouslySetInnerHTML={{ __html: link.text }}
                         />
                       </li>
-                    );
+                    )
                   }
                 })}
                 {helpUrl !== '' ? (
@@ -143,15 +142,15 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                   <li>
                     <a
                       href={'https://twitter.com/intent/tweet?&text=' + tweetText}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target='_blank'
+                      rel='noopener noreferrer'
                     >
                       <img className={'shareIcon'} src={twitter} alt={'Twitter'} />
                     </a>
                   </li>
                 ) : null}
                 {tweetText !== '' || githubUrl !== '' ? (
-                  <li className="divider hiddenMobile"></li>
+                  <li className='divider hiddenMobile'></li>
                 ) : null}
                 <li>
                   <DarkModeSwitch
@@ -168,7 +167,7 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
                 onClick={myFunction}
                 className={'navBarToggle'}
                 onKeyDown={myFunction}
-                role="button"
+                role='button'
                 tabIndex={0}
               >
                 <span className={'iconBar'}></span>
@@ -183,9 +182,9 @@ const Header = ({ location, isDarkThemeActive, toggleActiveTheme }) => (
             ) : null}
           </StyledBgDiv>
         </div>
-      );
+      )
     }}
   />
-);
+)
 
-export default Header;
+export default Header

@@ -1,33 +1,33 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import config from '../config';
-import favIcon from './images/black_logo.png';
+import React from 'react'
+import PropTypes from 'prop-types'
+import config from '../config'
+import favIcon from './images/Ecareer2.png'
 
 export default class HTML extends React.Component {
-  render() {
+  render () {
     return (
-      <html {...this.props.htmlAttributes} lang="en">
+      <html {...this.props.htmlAttributes} lang='en'>
         <head>
-          <meta charSet="utf-8" />
-          <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+          <meta charSet='utf-8' />
+          <meta httpEquiv='x-ua-compatible' content='ie=edge' />
+          <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
           {config.siteMetadata.ogImage ? (
-            <meta property="og:image" content={config.siteMetadata.ogImage} />
+            <meta property='og:image' content={config.siteMetadata.ogImage} />
           ) : null}
-          <meta property="twitter:card" content="summary_large_image" />
+          <meta property='twitter:card' content='summary_large_image' />
           {config.siteMetadata.ogImage ? (
-            <meta property="twitter:image" content={config.siteMetadata.ogImage} />
+            <meta property='twitter:image' content={config.siteMetadata.ogImage} />
           ) : null}
           {/* {config.siteMetadata.favicon ? (
             
           ) : null} */}
-          <link rel="icon" type="image/svg" href={favIcon} />
-          <noscript key="noscript"></noscript>
+          <link rel='icon' type='image/svg' href={favIcon} />
+          <noscript key='noscript'></noscript>
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
-          <div key={`body`} id="___gatsby" dangerouslySetInnerHTML={{ __html: this.props.body }} />
+          <div key={`body`} id='___gatsby' dangerouslySetInnerHTML={{ __html: this.props.body }} />
           {this.props.postBodyComponents}
           <script
             defer
@@ -46,7 +46,7 @@ export default class HTML extends React.Component {
           />
         </body>
       </html>
-    );
+    )
   }
 }
 
@@ -57,4 +57,4 @@ HTML.propTypes = {
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
   postBodyComponents: PropTypes.array,
-};
+}

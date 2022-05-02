@@ -8,8 +8,7 @@ const config = {
   header: {
     logo: 'https://github.com/z-sohaib/iq-documentation/blob/main/src/images/black_logo.png',
     logoLink: 'https://hasura.io/learn/',
-    title:
-      "<a href='https://hasura.io/learn/'>MatrIQ</a>",
+    title: "<a href='https://hasura.io/learn/'>MatrIQ</a>",
     githubUrl: 'https://github.com/hasura/gatsby-gitbook-boilerplate',
     helpUrl: '',
     tweetText: '',
@@ -51,7 +50,7 @@ const config = {
       "<a href='https://hasura.io/learn/'>graphql </a><div class='greenCircle'></div><a href='https://hasura.io/learn/graphql/react/introduction/'>react</a>",
   },
   siteMetadata: {
-    title: 'TestIQ Docs',
+    title: 'Ecareer',
     description: 'Documentation built with mdx. Powering hasura.io/learn ',
     ogImage: null,
     docsLocation: 'https://github.com/hasura/gatsby-gitbook-boilerplate/tree/master/content',
@@ -76,6 +75,6 @@ const config = {
       ],
     },
   },
-};
+}
 
-module.exports = config;
+module.exports = config
