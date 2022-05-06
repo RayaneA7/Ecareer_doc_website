@@ -1,16 +1,15 @@
 ---
-title: "a. Authentification"
-metaTitle: "TestIQ"
-metaDescription: "This is the meta description for this page"
+title: "a.1 Authentification"
+metaTitle: "Ecareer authentification"
+metaDescription: "une description de la page de connexion"
 ---
 
-On a trois types d’authentification selon l’utilisateur :
+# Se connecter:
 
- - Patient: il doit saisir son mail et le mot de passe pour se connecter ou remplir les champs pour s’inscrire et créer un compte.
- - Même chose pour le psychologue et l’organisation
+  Soit s’inscrire et créer un nouveau compte,sinon s'il a déjà créé un compte il n’a qu'à s’**authentifier** avec une adresse mail valide et un mot de passe correct.
+   Et dans les deux cas lorsqu' il finalise le processus, il sera redirigé vers la page d'accueil.
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/connecter_patient.PNG?raw=true)
+![frame](https://github.com/RayaneA7/Ecareer_doc_website/blob/main/src/images/capture/Se%20connecter.png?raw=true)
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/inscrir_patient.PNG?raw=true)
 
 

@@ -4,7 +4,11 @@ metaTitle: "Ecareer"
 metaDescription: "Exploitation du logiciel"
 ---
 
-A l’ouverture du logiciel, la toute première fenêtre affichée par un logiciel est un splash screen apparait comporte des informations sur le test QI en général plus un bouton de commencer.
+ Au début, Après avoir installé l'application, dès que l'étudiant ouvre le programme il aura devant lui deux choix :
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/intro.PNG?raw=true)
+ ### Se connecter, S'inscrire
+
+il peux egalement consulter la page web d'aide, en cliquant sur le bouton **Help**
+
+![frame](https://github.com/RayaneA7/Ecareer_doc_website/blob/main/src/images/capture/intro.png?raw=true)
 

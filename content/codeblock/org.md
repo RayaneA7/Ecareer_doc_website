@@ -1,11 +1,21 @@
 ---
-title: "d. Affichage"
-metaTitle: "TestIQ"
-metaDescription: "This is the meta description for this page"
+title: "c. Projets"
+metaTitle: " Ecareer projets"
+metaDescription: "une description de la page projets "
 ---
 
-Il y a deux types d’affichages, un concerne les résultats du dernier test et un autre comporte les résultats de tous les tests.
+Sur la page de **Projets**, il aura une visualisation globale des projets déjà ajoutée et ainsi qu’un bouton pour ajouter d’autres.
+  pour chaque projet.
+  
+  ![frame](https://github.com/RayaneA7/Ecareer_doc_website/blob/main/src/images/capture/projects.png?raw=true)
+  
+   il aura le choix de :
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/affich_ind.PNG?raw=true)
+  1. visualiser le projet en détail
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/statglob_patient.PNG?raw=true)
+  2. modifier le projet  (description , compétences …)
+  3. ajouter le projet a une liste de favoris
+  4. supprimer le projet
+
+
+![frame](https://github.com/RayaneA7/Ecareer_doc_website/blob/main/src/images/capture/creerProjet.png?raw=true)

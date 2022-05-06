@@ -1,10 +1,24 @@
 ---
-title: "b. Menu principale"
-metaTitle: "TestIQ"
-metaDescription: "This is the meta description for this page"
+title: "a.2 Authentification"
+metaTitle: "Ecareer authentification"
+metaDescription: "une description de la page de creation d'un compte -photo3 y'a pas "
 ---
 
-Après que le patient soit connecté, il tombe dans la page du menu principal ou il a deux choix: soit il passe un test, soit il affiche les résultats.
+# S'inscrire :
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/page_patientPNG.PNG?raw=true)
+Elle permettra à l’utilisateur de s’**inscrire** et créer un nouveau compte, un formulaire de 3 pages apparaît succesi où il devra communiquer ces informations personnelles ainsi que sa photo et coordonnées d'authentification, ses données seront sauvegardées dans un fichier JSON personnel.
+
+au début il doit communiquer ses données personnelles :
+
+![frame](https://github.com/RayaneA7/Ecareer_doc_website/blob/main/src/images/capture/inscription1.png?raw=true)
+
+
+ensuite, ses données de connexions (mail et mot de passe):
+
+![frame](https://github.com/RayaneA7/Ecareer_doc_website/blob/main/src/images/capture/inscription2.png?raw=true)
+
+
+ finalement, sa photo et ses réseaux sociaux :
+ 
+![frame](https://github.com/RayaneA7/Ecareer_doc_website/blob/main/src/images/capture/inscription3.png?raw=true)
 

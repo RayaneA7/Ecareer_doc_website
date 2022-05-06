@@ -1,14 +1,14 @@
 ---
-title: "e. Psychologue dashboard"
-metaTitle: "TestIQ"
+title: "e. Profil"
+metaTitle: "Ecareer profil"
 metaDescription: "This is the meta description for this page"
 ---
 
-Pour le psychologue il a deux options:
+Chaque individue peut consulter son profil et modifier ses informations personnelles ( Nom , Prenom , Adress Email , Mot de passe et photo ... )
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/page_org.PNG?raw=true)
+<!-- ![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/page_org.PNG?raw=true) -->
 
-En cliquant sur l’option du individuels, cette fenêtre s’affiche: 
+<!-- En cliquant sur l’option du individuels, cette fenêtre s’affiche: 
 
 ![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/tab_org.PNG?raw=true)
 
@@ -33,7 +33,7 @@ En cliquant sur Statistique Globale, on passe vers une autre fenêtre qui affich
  - Dans le cas où le psychologue supprime les utilisateurs par erreur et souhaite les restaurer, nous avons la possibilité de restaurer une ancienne copie de la base de données en cliquant sur le bouton restaurer ,Puis il choisit la version dont il a besoin. 
   - Il peut également sauvegarder une version actuelle de la base de données pour une utilisation prochaine en cliquant sur le bouton Sauvegarder puis en choisissant le chemin où il souhaite enregistrer la version . 
 
-![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/Restaurer.PNG?raw=true)
+![frame](https://github.com/z-sohaib/iq-documentation/blob/main/src/images/capture/Restaurer.PNG?raw=true) -->
 
 
 
