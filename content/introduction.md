@@ -1,6 +1,6 @@
 ---
 title: "A propos du logiciel"
-metaTitle: "TestIQ"
+metaTitle: "Ecareer"
 metaDescription: "A propos du logiciel"
 ---
 
